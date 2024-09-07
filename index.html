@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Consulta do Candidato</title>
+    <!-- Ligação do arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Situação do Candidato</h1>
+        <form id="cpfForm">
+            <label for="cpf">Digite seu CPF:</label>
+            <input type="text" id="cpf" maxlength="11" placeholder="CPF sem pontos ou traços" required>
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="info" class="info-hidden">
+            <h2>Informações do Candidato</h2>
+            <p><strong>Situação da Inscrição:</strong> <span id="statusInscricao"></span></p>
+            <p><strong>Local de Prova:</strong> <span id="localProva"></span></p>
+            <p><strong>Situação de Recursos:</strong> <span id="statusRecursos"></span></p>
+            <p><strong>Situação de Matrícula:</strong> <span id="statusMatricula"></span></p>
+        </div>
+    </div>
+
+    <!-- Ligação do arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
